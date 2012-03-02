@@ -1,0 +1,11 @@
+services:
+    test_auth_provider:
+        class: Test\AuthBundle\AuthenticationProvider
+        abstract: true
+        public: false
+        arguments: [@security.user_checker, "key", false]
+        calls:
+            - [setRouter,  [@router]]
+
+    test_user_provider:
+        class: Test\AuthBundle\TestUserProvider

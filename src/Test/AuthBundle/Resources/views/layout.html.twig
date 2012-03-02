@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Auth Test</title>
+	</head>
+	<body>
+		<a href="{{ path('index') }}">Index</a> | 
+		<a href="{{ path('login') }}">Login</a> | 
+		<a href="{{ path('secured') }}">Secured</a> |
+		<a href="{{ path('logout') }}">Logout</a>
+		<hr />
+		{% block body '' %}
+	</body>
+</html>

@@ -1,0 +1,5 @@
+services:
+    test_auth_factory:
+        class: Test\AuthBundle\AuthenticationFactory
+        tags:
+            - {name: "security.listener.factory"}
